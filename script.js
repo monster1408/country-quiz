@@ -1,11 +1,16 @@
-country = ["日本","韓国","中国","ドイツ","フランス","イギリス","スペイン","アメリカ","カナダ","メキシコ","ロシア","モンゴル","フィリピン","南アフリカ"]
+const countries = [
+  "日本", "韓国", "中国", "ドイツ", "フランス", "イギリス",
+  "スペイン", "アメリカ", "カナダ", "メキシコ",
+  "ロシア", "モンゴル", "フィリピン", "南アフリカ"
+];
 
-flag = document.getElementById("flag").src;
+function randomimage() {
+  const random = Math.floor(Math.random() * countries.length);
+  const selectedCountry = countries[random];
 
-answer = document.getElementById("answer").value;
+  // 国旗画像ファイル名（例: 日本.png）をセット
+  document.getElementById("flag").src = "flags/" + selectedCountry + ".png";
 
-function randomimage(){
-  var random = Math.floor( Math.random() * items.length );
-  flag = country[random]+".png";
+  // ボタンを非表示にする
   document.getElementById("start").style.display = "none";
 }
