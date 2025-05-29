@@ -4,14 +4,24 @@ const countries = [
   "ロシア", "モンゴル", "フィリピン", "南アフリカ",
   "ネパール","スイス","ブラジル","ルクセンブルク","デンマーク"
 ];
+docment.getElementById(ans).style.display = "none";
+
 
 function randomimage() {
-  const random = Math.floor(Math.random() * countries.length);
-  const selectedCountry = countries[random];
+  var random = Math.floor(Math.random() * countries.length);
+  var selectedCountry = countries[random];
 
   // 国旗画像ファイル名（例: 日本.png）をセット
   document.getElementById("flag").src = selectedCountry + ".png";
 
   // ボタンを非表示にする
   document.getElementById("start").style.display = "none";
+  
+  //ボタンを表示する
+  docment.getElementById(ans).style.display = "block";
+}
+
+function ans(){
+    
+    
 }
