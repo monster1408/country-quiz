@@ -10,7 +10,7 @@ function randomimage() {
   const selectedCountry = countries[random];
 
   // 国旗画像ファイル名（例: 日本.png）をセット
-  document.getElementById("flag").src = "flags/" + selectedCountry + ".png";
+  document.getElementById("flag").src = selectedCountry + ".png";
 
   // ボタンを非表示にする
   document.getElementById("start").style.display = "none";
