@@ -22,6 +22,10 @@ function randomimage() {
 }
 
 function ans(){
-    
+    if(docment.getElementById(answer).value == selectedCountry){
+      document.write("正解");
+    } else {
+      document.write("不正解");
+    }
     
 }
