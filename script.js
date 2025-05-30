@@ -4,7 +4,7 @@ const countries = [
   "ロシア", "モンゴル", "フィリピン", "南アフリカ",
   "ネパール","スイス","ブラジル","ルクセンブルク","デンマーク"
 ];
-docment.getElementById(ans).style.display = "none";
+document.getElementById(ans).style.display = "none";
 
 
 function randomimage() {
@@ -18,7 +18,7 @@ function randomimage() {
   document.getElementById("start").style.display = "none";
   
   //ボタンを表示する
-  docment.getElementById(ans).style.display = "block";
+  document.getElementById(ans).style.display = "block";
 }
 
 function ans(){
