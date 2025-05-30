@@ -8,8 +8,8 @@ docment.getElementById(ans).style.display = "none";
 
 
 function randomimage() {
-  var random = Math.floor(Math.random() * countries.length);
-  var selectedCountry = countries[random];
+  random = Math.floor(Math.random() * countries.length);
+  selectedCountry = countries[random];
 
   // 国旗画像ファイル名（例: 日本.png）をセット
   document.getElementById("flag").src = selectedCountry + ".png";
@@ -22,7 +22,7 @@ function randomimage() {
 }
 
 function ans(){
-    if(docment.getElementById(answer).value == selectedCountry){
+    if(document.getElementById("answer").value == selectedCountry){
       document.write("正解");
     } else {
       document.write("不正解");
