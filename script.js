@@ -27,5 +27,5 @@ function ans(){
     } else {
       document.write("不正解");
     }
-    
+    location.href='https://monster1408.github.io/country-quiz/';
 }
